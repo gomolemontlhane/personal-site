@@ -369,9 +369,13 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+ width: 200px;  /* Set fixed square size */
+  height: 200px;
+  object-fit: cover; /* Maintain aspect ratio and fill */
+  object-position: top; /* Center the image */
+  clip-path: inset(0); /* Ensures no overflow */
+  border-radius: 1rem; /* Optional: Rounds corners */
+
 }
 
 .project-title {
